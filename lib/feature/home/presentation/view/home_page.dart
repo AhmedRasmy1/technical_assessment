@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:technical_assessment/core/resources/color_manager.dart';
 import 'package:technical_assessment/core/resources/values_manager.dart';
-import 'package:technical_assessment/restaurant_atmosphere.dart';
-import 'package:technical_assessment/restaurant_body.dart';
-import 'package:technical_assessment/restaurant_header.dart';
+import 'package:technical_assessment/feature/home/presentation/sections/restaurant_atmosphere.dart';
+import 'package:technical_assessment/feature/home/presentation/sections/restaurant_body.dart';
+import 'package:technical_assessment/feature/home/presentation/sections/restaurant_header.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
