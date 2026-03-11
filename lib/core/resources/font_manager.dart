@@ -15,3 +15,8 @@ class FontSize {
   static const double s18 = 18.0;
   static const double s22 = 22.0;
 }
+
+class FontFamily {
+  static const String satoshiBold = 'Satoshi_bold';
+  static const String satoshiMedium = 'Satoshi_medium';
+}

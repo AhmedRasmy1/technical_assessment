@@ -1,0 +1,58 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:technical_assessment/core/functions/extensions.dart';
+import 'package:technical_assessment/core/resources/assets_manager.dart';
+import 'package:technical_assessment/core/resources/color_manager.dart';
+import 'package:technical_assessment/core/resources/values_manager.dart';
+import 'package:technical_assessment/core/widgets/custom_glass_button.dart';
+
+class RestaurantHeader extends StatelessWidget {
+  const RestaurantHeader({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [
+        SizedBox(
+          height: context.screenHeight * AppSize.s0_45,
+          width: context.screenWidth,
+          child: Image.asset(AssetsManager.restaurantHeader, fit: BoxFit.cover),
+        ),
+        Positioned(
+          bottom: AppSize.s0,
+          left: AppSize.s0,
+          right: AppSize.s0,
+          child: Container(
+            height: context.screenHeight * AppSize.s0_1,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [Colors.transparent, ColorManager.background],
+              ),
+            ),
+          ),
+        ),
+        SafeArea(
+          child: Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: context.screenWidth * 0.05,
+              vertical: context.screenHeight * 0.02,
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                CustomGlassButton(
+                  onTap: () {
+                    //! Handle back button tap
+                  },
+                ),
+                SvgPicture.asset(AssetsManager.profile),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
