@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:technical_assessment/home_page.dart';
+import 'package:technical_assessment/feature/home/presentation/view/home_page.dart';
 
 void main() {
   runApp(const Restaurant());
