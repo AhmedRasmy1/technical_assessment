@@ -1,4 +1,4 @@
-import 'package:technical_assessment/feature/home/data/restaurant_foodmenu/foodmenu_model.dart';
+import 'foodmenu_model.dart';
 
 class FoodmenuData {
   static List<FoodMenuModel> foodmenuList = [

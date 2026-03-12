@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:technical_assessment/core/functions/extensions.dart';
-import 'package:technical_assessment/core/resources/values_manager.dart';
+import '../../../../core/functions/extensions.dart';
+import '../../../../core/resources/values_manager.dart';
 
 Widget buildAtmosphereCard(BuildContext context, String imagePath) {
   return ClipRRect(

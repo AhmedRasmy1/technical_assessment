@@ -2,9 +2,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:technical_assessment/core/resources/assets_manager.dart';
-import 'package:technical_assessment/core/resources/color_manager.dart';
-import 'package:technical_assessment/core/resources/values_manager.dart';
+import '../resources/assets_manager.dart';
+import '../resources/color_manager.dart';
+import '../resources/values_manager.dart';
 
 class CustomGlassButton extends StatelessWidget {
   final VoidCallback onTap;

@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
-import 'package:technical_assessment/core/functions/extensions.dart';
-import 'package:technical_assessment/core/resources/color_manager.dart';
-import 'package:technical_assessment/core/resources/font_manager.dart';
+import '../../../../core/functions/extensions.dart';
+import '../../../../core/resources/color_manager.dart';
+import '../../../../core/resources/font_manager.dart';
 
 Widget preparationInfoWidget(BuildContext context, String text) {
   return Container(

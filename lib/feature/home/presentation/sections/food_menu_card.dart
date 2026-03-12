@@ -1,14 +1,14 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:technical_assessment/core/functions/extensions.dart';
-import 'package:technical_assessment/core/resources/color_manager.dart';
-import 'package:technical_assessment/core/resources/font_manager.dart';
-import 'package:technical_assessment/core/resources/values_manager.dart';
-import 'package:technical_assessment/feature/details_page/presentation/views/food_details_page.dart';
-import 'package:technical_assessment/feature/home/data/restaurant_foodmenu/foodmenu_model.dart';
-import 'package:technical_assessment/feature/home/presentation/widgets/price_circle_widget.dart';
-import 'package:technical_assessment/feature/home/presentation/widgets/trending_badge_widget.dart';
+import '../../../../core/functions/extensions.dart';
+import '../../../../core/resources/color_manager.dart';
+import '../../../../core/resources/font_manager.dart';
+import '../../../../core/resources/values_manager.dart';
+import '../../../details_page/presentation/views/food_details_page.dart';
+import '../../data/restaurant_foodmenu/foodmenu_model.dart';
+import '../widgets/price_circle_widget.dart';
+import '../widgets/trending_badge_widget.dart';
 
 class FoodMenuCard extends StatelessWidget {
   final FoodMenuModel model;

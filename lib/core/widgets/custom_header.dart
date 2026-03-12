@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:technical_assessment/core/functions/extensions.dart';
-import 'package:technical_assessment/core/resources/assets_manager.dart';
-import 'package:technical_assessment/core/resources/color_manager.dart';
-import 'package:technical_assessment/core/resources/values_manager.dart';
-import 'package:technical_assessment/core/widgets/custom_glass_button.dart';
+import '../functions/extensions.dart';
+import '../resources/assets_manager.dart';
+import '../resources/color_manager.dart';
+import '../resources/values_manager.dart';
+import 'custom_glass_button.dart';
 
 class CustomHeader extends StatelessWidget {
   final String imagePath;

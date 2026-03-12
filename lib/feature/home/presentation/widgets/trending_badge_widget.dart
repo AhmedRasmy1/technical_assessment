@@ -1,8 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:technical_assessment/core/functions/extensions.dart';
-import 'package:technical_assessment/core/resources/string_manager.dart';
+import '../../../../core/functions/extensions.dart';
+import '../../../../core/resources/string_manager.dart';
 
 Widget buildTrendingBadge(BuildContext context) {
   return ClipRRect(

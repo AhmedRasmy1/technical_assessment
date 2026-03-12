@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:technical_assessment/core/functions/extensions.dart';
-import 'package:technical_assessment/core/resources/color_manager.dart';
-import 'package:technical_assessment/core/resources/font_manager.dart';
-import 'package:technical_assessment/core/resources/string_manager.dart';
-import 'package:technical_assessment/core/resources/values_manager.dart';
+import '../../../../core/functions/extensions.dart';
+import '../../../../core/resources/color_manager.dart';
+import '../../../../core/resources/font_manager.dart';
+import '../../../../core/resources/string_manager.dart';
+import '../../../../core/resources/values_manager.dart';
 
 class BottomOrderBar extends StatelessWidget {
   final double price;

@@ -1,4 +1,4 @@
-import 'package:technical_assessment/feature/home/data/restaurant_atmoshpere/atmosphere_model.dart';
+import 'atmosphere_model.dart';
 
 class AthmosphereData {
   static final List<AtmosphereModel> atmosphereItems = [

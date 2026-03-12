@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:technical_assessment/core/resources/color_manager.dart';
-import 'package:technical_assessment/core/resources/font_manager.dart';
-import 'package:technical_assessment/core/resources/values_manager.dart';
-import 'package:technical_assessment/core/widgets/custom_section_title.dart';
+import '../resources/color_manager.dart';
+import '../resources/font_manager.dart';
+import '../resources/values_manager.dart';
+import 'custom_section_title.dart';
 
 class RestaurantCustomBody extends StatelessWidget {
   final String title;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:technical_assessment/core/resources/font_manager.dart';
+import '../resources/font_manager.dart';
 
 class CustomSectionTitle extends StatelessWidget {
   final Color? textColor;

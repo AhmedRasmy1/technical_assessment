@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:technical_assessment/core/functions/extensions.dart';
-import 'package:technical_assessment/core/resources/color_manager.dart';
-import 'package:technical_assessment/core/resources/font_manager.dart';
-import 'package:technical_assessment/core/resources/string_manager.dart';
-import 'package:technical_assessment/core/widgets/custom_section_title.dart';
-import 'package:technical_assessment/feature/home/data/restaurant_foodmenu/foodmenu_data.dart';
-import 'package:technical_assessment/feature/home/presentation/sections/food_menu_card.dart';
+import '../../../../core/functions/extensions.dart';
+import '../../../../core/resources/color_manager.dart';
+import '../../../../core/resources/font_manager.dart';
+import '../../../../core/resources/string_manager.dart';
+import '../../../../core/widgets/custom_section_title.dart';
+import '../../data/restaurant_foodmenu/foodmenu_data.dart';
+import 'food_menu_card.dart';
 
 class RestaurantFoodmenu extends StatelessWidget {
   const RestaurantFoodmenu({super.key});

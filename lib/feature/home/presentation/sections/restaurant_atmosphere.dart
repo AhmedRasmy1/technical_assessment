@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:technical_assessment/core/functions/extensions.dart';
-import 'package:technical_assessment/core/resources/color_manager.dart';
-import 'package:technical_assessment/core/resources/font_manager.dart';
-import 'package:technical_assessment/core/resources/string_manager.dart';
-import 'package:technical_assessment/core/widgets/custom_section_title.dart';
-import 'package:technical_assessment/feature/home/data/restaurant_atmoshpere/atmosphere_data.dart';
-import 'package:technical_assessment/feature/home/presentation/widgets/atmosphere_widget_card.dart';
+import '../../../../core/functions/extensions.dart';
+import '../../../../core/resources/color_manager.dart';
+import '../../../../core/resources/font_manager.dart';
+import '../../../../core/resources/string_manager.dart';
+import '../../../../core/widgets/custom_section_title.dart';
+import '../../data/restaurant_atmoshpere/atmosphere_data.dart';
+import '../widgets/atmosphere_widget_card.dart';
 
 class RestaurantAtmosphere extends StatelessWidget {
   const RestaurantAtmosphere({super.key});

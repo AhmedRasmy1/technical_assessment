@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:technical_assessment/core/functions/extensions.dart';
-import 'package:technical_assessment/core/resources/color_manager.dart';
-import 'package:technical_assessment/core/resources/string_manager.dart';
-import 'package:technical_assessment/core/resources/values_manager.dart';
-import 'package:technical_assessment/core/widgets/custom_header.dart';
-import 'package:technical_assessment/core/widgets/restaurant_custom_body.dart';
-import 'package:technical_assessment/feature/details_page/presentation/sections/order_preparation.dart';
+
+import '../../../../core/functions/extensions.dart';
+import '../../../../core/resources/color_manager.dart';
+import '../../../../core/resources/string_manager.dart';
+import '../../../../core/resources/values_manager.dart';
+import '../../../../core/widgets/custom_header.dart';
+import '../../../../core/widgets/restaurant_custom_body.dart';
+import '../sections/order_preparation.dart';
 
 class FoodDetailsPage extends StatelessWidget {
   final String imagePath;

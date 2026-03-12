@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:technical_assessment/core/functions/extensions.dart';
-import 'package:technical_assessment/core/resources/assets_manager.dart';
-import 'package:technical_assessment/core/resources/color_manager.dart';
-import 'package:technical_assessment/core/resources/string_manager.dart';
-import 'package:technical_assessment/core/resources/values_manager.dart';
-import 'package:technical_assessment/core/widgets/custom_header.dart';
-import 'package:technical_assessment/core/widgets/restaurant_custom_body.dart';
-import 'package:technical_assessment/feature/home/presentation/sections/restaurant_atmosphere.dart';
-import 'package:technical_assessment/feature/home/presentation/sections/restaurant_foodmenu.dart';
+import '../../../../core/functions/extensions.dart';
+import '../../../../core/resources/assets_manager.dart';
+import '../../../../core/resources/color_manager.dart';
+import '../../../../core/resources/string_manager.dart';
+import '../../../../core/resources/values_manager.dart';
+import '../../../../core/widgets/custom_header.dart';
+import '../../../../core/widgets/restaurant_custom_body.dart';
+import '../sections/restaurant_atmosphere.dart';
+import '../sections/restaurant_foodmenu.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
