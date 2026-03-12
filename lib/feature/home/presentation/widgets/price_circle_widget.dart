@@ -37,7 +37,7 @@ Widget buildPriceCircle(BuildContext context, double price) {
               ),
             ),
             Text(
-              StringManager.jod,
+              StringManager.priceUnit,
               style: TextStyle(
                 fontSize: context.screenWidth * 0.02,
                 color: ColorManager.title,

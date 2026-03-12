@@ -1,13 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:technical_assessment/core/functions/extensions.dart';
 import 'package:technical_assessment/core/resources/assets_manager.dart';
 import 'package:technical_assessment/core/resources/color_manager.dart';
 import 'package:technical_assessment/core/resources/values_manager.dart';
 import 'package:technical_assessment/core/widgets/custom_glass_button.dart';
 
-class RestaurantHeader extends StatelessWidget {
-  const RestaurantHeader({super.key});
+class CustomHeader extends StatelessWidget {
+  final String imagePath;
+  final bool showProfile;
+  final VoidCallback? onBackTap;
+
+  const CustomHeader({
+    super.key,
+    required this.imagePath,
+    this.showProfile = false,
+    this.onBackTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +24,7 @@ class RestaurantHeader extends StatelessWidget {
         SizedBox(
           height: context.screenHeight * AppSize.s0_45,
           width: context.screenWidth,
-          child: Image.asset(AssetsManager.restaurantHeader, fit: BoxFit.cover),
+          child: Image.asset(imagePath, fit: BoxFit.cover),
         ),
         Positioned(
           bottom: AppSize.s0,
@@ -42,12 +50,8 @@ class RestaurantHeader extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                CustomGlassButton(
-                  onTap: () {
-                    //! Handle back button tap
-                  },
-                ),
-                SvgPicture.asset(AssetsManager.profile),
+                CustomGlassButton(onTap: onBackTap!),
+                if (showProfile) Image.asset(AssetsManager.profile),
               ],
             ),
           ),

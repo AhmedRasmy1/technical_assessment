@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:technical_assessment/core/resources/color_manager.dart';
 import 'package:technical_assessment/core/resources/font_manager.dart';
-import 'package:technical_assessment/core/resources/string_manager.dart';
 import 'package:technical_assessment/core/resources/values_manager.dart';
 import 'package:technical_assessment/core/widgets/custom_section_title.dart';
 
-class RestaurantBody extends StatelessWidget {
-  const RestaurantBody({super.key});
+class RestaurantCustomBody extends StatelessWidget {
+  final String title;
+  final String name;
+  final String description;
+  final Color descriptionColor;
+
+  const RestaurantCustomBody({
+    super.key,
+    required this.title,
+    required this.name,
+    required this.description,
+    required this.descriptionColor,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +26,7 @@ class RestaurantBody extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           CustomSectionTitle(
-            text: StringManager.restaurantTitle,
+            text: title,
             textColor: ColorManager.headingText,
             fontFamily: FontFamily.satoshiBold,
             fontSize: FontSize.s15,
@@ -33,7 +43,7 @@ class RestaurantBody extends StatelessWidget {
                   ),
                 ),
             child: Text(
-              StringManager.restaurantName,
+              name,
               style: TextStyle(
                 fontFamily: FontFamily.satoshiBold,
                 fontSize: FontSize.s32,
@@ -41,11 +51,11 @@ class RestaurantBody extends StatelessWidget {
             ),
           ),
           Text(
-            StringManager.restaurantDescription,
+            description,
             style: TextStyle(
               fontFamily: FontFamily.satoshiMedium,
               fontSize: FontSize.s15,
-              color: ColorManager.bodyText,
+              color: descriptionColor,
             ),
           ),
         ],

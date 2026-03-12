@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:technical_assessment/core/functions/extensions.dart';
-import 'package:technical_assessment/core/resources/assets_manager.dart';
 import 'package:technical_assessment/core/resources/color_manager.dart';
 import 'package:technical_assessment/core/resources/string_manager.dart';
 import 'package:technical_assessment/core/resources/values_manager.dart';
 import 'package:technical_assessment/core/widgets/custom_header.dart';
 import 'package:technical_assessment/core/widgets/restaurant_custom_body.dart';
-import 'package:technical_assessment/feature/home/presentation/sections/restaurant_atmosphere.dart';
-import 'package:technical_assessment/feature/home/presentation/sections/restaurant_foodmenu.dart';
+import 'package:technical_assessment/feature/details_page/presentation/sections/order_preparation.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class FoodDetailsPage extends StatelessWidget {
+  final String imagePath;
+  final String foodName;
+  final double price;
+  const FoodDetailsPage({
+    super.key,
+    required this.imagePath,
+    required this.foodName,
+    required this.price,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -21,27 +27,23 @@ class HomePage extends StatelessWidget {
           child: Column(
             children: [
               CustomHeader(
-                imagePath: AssetsManager.restaurantHeader,
-                onBackTap: () {},
-                showProfile: true,
+                imagePath: imagePath,
+                onBackTap: () {
+                  Navigator.pop(context);
+                },
               ),
-              SizedBox(height: context.screenHeight * AppSize.s0_01),
               Padding(
-                padding: EdgeInsets.symmetric(
-                  horizontal: context.screenHeight * AppSize.s0_01,
-                ),
+                padding: EdgeInsets.symmetric(horizontal: AppSize.s16),
                 child: Column(
                   children: [
                     RestaurantCustomBody(
-                      title: StringManager.restaurantTitle,
-                      name: StringManager.restaurantName,
+                      title: StringManager.mainCourseTitle,
+                      name: foodName,
                       description: StringManager.restaurantDescription,
-                      descriptionColor: ColorManager.smallTitle,
+                      descriptionColor: ColorManager.title,
                     ),
                     SizedBox(height: context.screenHeight * AppSize.s0_01),
-                    RestaurantAtmosphere(),
-                    SizedBox(height: context.screenHeight * AppSize.s0_01),
-                    RestaurantFoodmenu(),
+                    OrderPreparation(price: price),
                   ],
                 ),
               ),

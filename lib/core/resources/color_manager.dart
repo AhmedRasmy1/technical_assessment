@@ -15,6 +15,18 @@ class ColorManager {
   static Color glassButtonBorder = const Color(
     0xFF000000,
   ).withValues(alpha: 0.30);
+  static Color preparationWidgetBackground = const Color(
+    0xFFFFFFFF,
+  ).withValues(alpha: 0.30);
+  static Color preparationWidgetBorder = const Color(
+    0xFFFFFFFF,
+  ).withValues(alpha: 0.18);
+  static Color addToOrderBorder = const Color(
+    0xFF000000,
+  ).withValues(alpha: 0.10);
+  static Color addToOrderBackground = const Color(
+    0xFF000000,
+  ).withValues(alpha: 0.20);
 
   static const LinearGradient primaryGradient = LinearGradient(
     colors: [primaryGradientStart, primaryGradientEnd],

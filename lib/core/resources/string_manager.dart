@@ -6,5 +6,12 @@ class StringManager {
   static const String atmoshpereTitle = "Atmosphere";
   static const String foodmenuTitle = "Food Menu";
   static const String trendingTitle = "Trending";
-  static const String jod = "JOD";
+  static const String priceUnit = "JOD";
+  static const String mainCourseTitle = "Main Course";
+  static const String cookingTime = "20 Minutes";
+  static const String servingSize = "Serving Size: 1";
+  static const String preparation = "Preparation";
+  static const String taxAndService = "+ tax & service";
+  static const String jordanianDinar = "JD";
+  static const String addToOrder = "Add To Order";
 }

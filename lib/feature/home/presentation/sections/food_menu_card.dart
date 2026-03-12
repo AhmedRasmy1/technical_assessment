@@ -5,6 +5,7 @@ import 'package:technical_assessment/core/functions/extensions.dart';
 import 'package:technical_assessment/core/resources/color_manager.dart';
 import 'package:technical_assessment/core/resources/font_manager.dart';
 import 'package:technical_assessment/core/resources/values_manager.dart';
+import 'package:technical_assessment/feature/details_page/presentation/views/food_details_page.dart';
 import 'package:technical_assessment/feature/home/data/restaurant_foodmenu/foodmenu_model.dart';
 import 'package:technical_assessment/feature/home/presentation/widgets/price_circle_widget.dart';
 import 'package:technical_assessment/feature/home/presentation/widgets/trending_badge_widget.dart';
@@ -18,18 +19,16 @@ class FoodMenuCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        /*
         Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) => FoodDetailsPage(
               imagePath: model.imagePath,
-              description: model.imageDescription,
+              foodName: model.imageDescription,
               price: model.price,
             ),
           ),
         );
-        */
       },
       child: ClipRRect(
         borderRadius: BorderRadius.circular(context.screenWidth * 0.04),
