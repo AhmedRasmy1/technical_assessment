@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:technical_assessment/feature/home/presentation/widgets/menu_grid_widget.dart';
+import '../widgets/menu_grid_widget.dart';
 import '../../../../core/functions/extensions.dart';
 import '../../../../core/resources/color_manager.dart';
 import '../../../../core/resources/font_manager.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:technical_assessment/core/functions/extensions.dart';
-import 'package:technical_assessment/feature/home/data/restaurant_foodmenu/foodmenu_data.dart';
-import 'package:technical_assessment/feature/home/presentation/sections/food_menu_card.dart';
+import '../../../../core/functions/extensions.dart';
+import '../../data/restaurant_foodmenu/foodmenu_data.dart';
+import '../sections/food_menu_card.dart';
 
 Widget buildMenuGrid(BuildContext context) {
   List<Widget> leftColumn = [];

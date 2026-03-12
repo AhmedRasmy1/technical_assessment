@@ -1,4 +1,4 @@
-import 'package:technical_assessment/core/resources/assets_manager.dart';
+import '../../../../core/resources/assets_manager.dart';
 
 import 'foodmenu_model.dart';
 
