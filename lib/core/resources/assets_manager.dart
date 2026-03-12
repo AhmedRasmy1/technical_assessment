@@ -8,4 +8,7 @@ class AssetsManager {
   static const String atmosphereImage3 = "assets/images/atmosphere_iamge4.png";
   static const String atmosphereImage4 = "assets/images/atmosphere_iamge5.png";
   static const String atmosphereImage5 = "assets/images/atmosphere_iamge6.png";
+  static const String foodMenu2 = "assets/images/food_menu_2.png";
+  static const String foodMenu3 = "assets/images/food_menu_3.png";
+  static const String foodMenu4 = "assets/images/food_menu_4.png";
 }

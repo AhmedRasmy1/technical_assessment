@@ -1,3 +1,5 @@
+import 'package:technical_assessment/core/resources/assets_manager.dart';
+
 import 'foodmenu_model.dart';
 
 class FoodmenuData {
@@ -5,25 +7,25 @@ class FoodmenuData {
     FoodMenuModel(
       imageDescription: "Tenderloin Steak with Grilled Vegetables",
       price: 49.95,
-      imagePath: "assets/images/food_menu_1.png",
+      imagePath: AssetsManager.foodMenu1,
       isTrending: true,
     ),
     FoodMenuModel(
       imageDescription: "25 Piece Sushi Boat with Three SIdes",
       price: 49.95,
-      imagePath: "assets/images/food_menu_2.png",
+      imagePath: AssetsManager.foodMenu2,
       isTrending: false,
     ),
     FoodMenuModel(
       imageDescription: "Shared Meal and Drinks",
       price: 49.95,
-      imagePath: "assets/images/food_menu_3.png",
+      imagePath: AssetsManager.foodMenu3,
       isTrending: false,
     ),
     FoodMenuModel(
       imageDescription: "25 Piece Sushi Boat with Three SIdes",
       price: 49.95,
-      imagePath: "assets/images/food_menu_4.png",
+      imagePath: AssetsManager.foodMenu4,
       isTrending: false,
     ),
   ];
