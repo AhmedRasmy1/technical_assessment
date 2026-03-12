@@ -1,11 +1,11 @@
 class FoodMenuModel {
-  final String title;
+  final String imageDescription;
   final String imagePath;
-  final String price;
+  final double price;
   final bool isTrending;
 
   FoodMenuModel({
-    required this.title,
+    required this.imageDescription,
     required this.imagePath,
     required this.price,
     required this.isTrending,

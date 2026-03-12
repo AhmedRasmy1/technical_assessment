@@ -5,4 +5,6 @@ class StringManager {
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
   static const String atmoshpereTitle = "Atmosphere";
   static const String foodmenuTitle = "Food Menu";
+  static const String trendingTitle = "Trending";
+  static const String jod = "JOD";
 }
