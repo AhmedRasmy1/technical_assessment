@@ -62,14 +62,26 @@ class BottomOrderBar extends StatelessWidget {
                     children: [
                       Icon(Icons.check_circle, color: Colors.green, size: 28),
                       SizedBox(width: 12),
-                      Text('Order Placed!'),
+                      Text(
+                        StringManager.orderPlaced,
+                        style: TextStyle(
+                          fontFamily: FontFamily.satoshiBold,
+                          fontSize: context.screenWidth * 0.045,
+                        ),
+                      ),
                     ],
                   ),
-                  content: Text('Your order has been successfully added.'),
+                  content: Text(
+                    StringManager.orderSuccessfullyAdded,
+                    style: TextStyle(
+                      fontFamily: FontFamily.satoshiMedium,
+                      fontSize: context.screenWidth * 0.035,
+                    ),
+                  ),
                   actions: [
                     ElevatedButton(
                       onPressed: () => Navigator.pop(context),
-                      child: Text('Continue'),
+                      child: Text(StringManager.continueButton),
                     ),
                   ],
                 ),

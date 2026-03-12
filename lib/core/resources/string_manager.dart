@@ -14,4 +14,8 @@ class StringManager {
   static const String taxAndService = "+ tax & service";
   static const String jordanianDinar = "JD";
   static const String addToOrder = "Add To Order";
+  static const String orderPlaced = 'Order Placed!';
+  static const String orderSuccessfullyAdded =
+      'Your order has been successfully added.';
+  static const String continueButton = 'Continue';
 }
