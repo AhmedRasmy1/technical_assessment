@@ -55,7 +55,7 @@ class RestaurantCustomBody extends StatelessWidget {
             style: TextStyle(
               fontFamily: FontFamily.satoshiMedium,
               fontSize: FontSize.s15,
-              color: descriptionColor,
+              color: ColorManager.bodyText,
             ),
           ),
         ],

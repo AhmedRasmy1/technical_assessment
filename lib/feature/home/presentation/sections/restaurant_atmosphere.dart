@@ -25,10 +25,11 @@ class RestaurantAtmosphere extends StatelessWidget {
           ),
           SizedBox(height: context.screenHeight * 0.02),
           SizedBox(
-            height: context.screenHeight * 0.44,
-            width: context.screenHeight * 0.47,
+            height: context.screenHeight * 0.47,
+            width: double.infinity,
             child: ListView.separated(
               scrollDirection: Axis.horizontal,
+              clipBehavior: Clip.none,
               itemCount: AthmosphereData.atmosphereItems.length,
               separatorBuilder: (context, index) =>
                   SizedBox(width: context.screenWidth * 0.04),

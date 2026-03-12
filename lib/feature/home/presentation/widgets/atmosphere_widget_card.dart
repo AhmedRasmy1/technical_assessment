@@ -6,9 +6,8 @@ Widget buildAtmosphereCard(BuildContext context, String imagePath) {
   return ClipRRect(
     borderRadius: BorderRadius.circular(AppSize.s12),
     child: SizedBox(
-      width: context.screenWidth * 0.79,
-      height: context.screenHeight * 0.44,
-      child: Image.asset(imagePath, fit: BoxFit.fill),
+      width: context.screenWidth * 0.80,
+      child: Image.asset(imagePath, fit: BoxFit.cover),
     ),
   );
 }
